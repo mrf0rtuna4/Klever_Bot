@@ -37,14 +37,10 @@ async def on_ready():
 
 @bot.event
 async def on_command_error(ctx, error):
-   # if isinstance(error, commands.CommandNotFound):
-     #   return  # Игнорировать ошибку, если команда не найдена
-
-    # Создание сообщения об ошибке
     error_embed = disnake.Embed(
         title=':x: Ошибка!',
         description=str(error),
-        color=0xFF0000  # Красный цвет
+        color=0xFF0000
     )
     await ctx.reply(embed=error_embed)
 
