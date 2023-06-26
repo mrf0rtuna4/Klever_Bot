@@ -1,1 +1,5 @@
 *.json
+__pycache__
+logs
+*.log
+tutorial-env
